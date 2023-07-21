@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: lightgray;
+}
+
+#header {
+  background-color: #f7f8fa;
+
+  width: unset;
+  height: fit-content;
+
+  /* border: 1px solid red; */
+}
+
+#header figure {
+  width: inherit;
+  height: inherit;
+}
+
+#header figure img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#macro-nav-bar {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+
+  /* border: 3px solid rgb(78, 72, 16); */
+}
+
+#macro-nav-bar ul,
+nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#macro-nav-bar p,
+#macro-nav-bar span {
+  font-weight: 700;
+}
+#macro-nav-bar p span {
+  color: rgb(213, 51, 48);
+}
+
+#navigation-macro-sections ul li,
+#navigation-micro-sections ul li {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  padding: 2rem 0.5rem;
+}
+
+#navigation-macro-sections ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+#navigation-macro-sections ul li:active {
+  color: black;
+  background-color: rgb(190, 188, 188);
+}
+
+#actions-icons-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#actions-icons-list ul li:hover i,
+#actions-icons-list ul li:hover span {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+#actions-icons-list i,
+#actions-icons-list span {
+  color: #666;
+}
+#actions-icons-list span {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#actions-icons-list i {
+  font-size: 2.4rem;
+}
+
+#micro-nav-bar {
+  background-color: white;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+
+#navigation-micro-sections ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+#navigation-micro-sections ul li {
+  font-size: 1.2rem;
+  color: black;
+  padding-bottom: 1.5rem;
+}
+
+#navigation-micro-sections ul li:hover {
+  border-bottom: 0.2rem solid black;
+  cursor: pointer;
+}
+#navigation-micro-sections ul li#sale {
+  color: rgb(237, 53, 75);
+}
+
+#search-space {
+  display: flex;
+}
+
+#search-space input {
+  border: 0.1rem solid #e5e5e5;
+  padding: 1rem;
+}
+
+#search-space button {
+  background-color: black;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  transition: 0.3s ease;
+}
+
+#search-space button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#search-space button i {
+  font-weight: 400;
+  font-size: 2rem;
+}
